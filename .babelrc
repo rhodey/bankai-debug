@@ -1,4 +1,4 @@
 {
-  "presets" : [],
+  "presets": [],
   "plugins": ["transform-object-rest-spread"]
 }
