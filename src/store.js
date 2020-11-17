@@ -18,6 +18,8 @@ function store(state, emitter) {
     state.core.append(state.core.length + 1, function (err) {
       if (err) {
         console.error(err)
+      } else if (state.count === 5) {
+        throw new Error('src maps?')
       } else {
         state.count = state.core.length
         emitter.emit(state.events.RENDER)

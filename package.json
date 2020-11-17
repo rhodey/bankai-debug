@@ -3,27 +3,18 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build": "bankai build index.js",
-    "start": "bankai start index.js"
+    "build": "browserify src/index.js -o dist/bundle.js",
+    "watch": "watchify src/index.js -o 'exorcist dist/bundle.js.map > dist/bundle.js' -dv"
   },
   "dependencies": {
     "choo": "7.1.0",
+    "hypercore": "9.6.0",
     "hypercore-crypto": "2.1.0",
-    "random-access-memory": "3.1.1",
-    "hypercore": "9.6.0"
+    "random-access-memory": "3.1.1"
   },
   "devDependencies": {
-    "bankai": "9.15.3",
-    "babel-polyfill": "6.26.0",
-    "babel-plugin-transform-object-rest-spread": "6.26.0"
-  },
-  "browserify": {
-    "transform": [
-      ["babelify", { "plugins": ["transform-object-rest-spread"] }]
-    ]
-  },
-  "babel": {
-    "presets": [],
-    "plugins": ["transform-object-rest-spread"]
+    "browserify": "17.0.0",
+    "exorcist": "1.0.1",
+    "watchify": "3.11.1"
   }
 }

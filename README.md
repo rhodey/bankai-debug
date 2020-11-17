@@ -1,8 +1,12 @@
 # bankai-debug
-Small example project to reproduce bankai+hypercore bundling issue, `.babelrc` appears to be ignored.
+Small example project to reproduce bankai+hypercore bundling issue relating to the JavaScript "spread" operator (`{ ...obj }`). The file `.babelrc` appears to be ignored by bankai well as `package.json`.
 
 ```
-$ npm install
+$ npm install && npm install -g browserify
+$ browserify index.js -o bundle.js
+$
+$ echo "no errors!"
+$
 $ npm run build
 > sodium-debug@0.0.1 build /home/rhodey/dev/dsp/js/bankai-debug
 > bankai build index.js

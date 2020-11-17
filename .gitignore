@@ -1,4 +1,6 @@
-npm-debug.log*
+dist/bundle.js.map
+dist/bundle.js
+
 node_modules/
-dist/
+npm-debug.log*
 *\.swp
