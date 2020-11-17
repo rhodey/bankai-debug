@@ -1,3 +1,4 @@
+const babel = require('babel-polyfill')
 const choo = require('choo')
 const app = choo()
 
