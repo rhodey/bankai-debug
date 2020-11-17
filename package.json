@@ -1,0 +1,19 @@
+{
+  "name": "sodium-debug",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "bankai build index.js",
+    "start": "bankai start index.js"
+  },
+  "dependencies": {
+    "choo": "7.1.0",
+    "hypercore-crypto": "2.1.0",
+    "random-access-memory": "3.1.1",
+    "hypercore": "9.6.0"
+  },
+  "devDependencies": {
+    "bankai": "9.15.3",
+    "babel-plugin-transform-object-rest-spread": "6.26.0"
+  }
+}
